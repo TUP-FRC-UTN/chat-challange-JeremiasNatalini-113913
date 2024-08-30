@@ -1,0 +1,14 @@
+<div class="chat-room">
+  <h2>Conversación</h2>
+  <div *ngFor="let msg of messages">
+    <strong>{{ msg.user }}:</strong> {{ msg.text }}
+  </div>
+  <app-user-message
+    [user]="user1"
+    (messageSend)="receiveMessage($event)">
+  </app-user-message>
+  <app-user-message
+    [user]="user2"
+    (messageSend)="receiveMessage($event)">
+  </app-user-message>
+</div>
