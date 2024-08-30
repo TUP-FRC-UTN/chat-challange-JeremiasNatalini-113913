@@ -1,0 +1,5 @@
+<div class="user-message">
+  <h3>Usuario: {{ user }}</h3>
+  <textarea [(ngModel)]="messageText" placeholder="Mensaje"></textarea>
+  <button (click)="sendMessage()">Guardar</button>
+</div>
